@@ -129,3 +129,56 @@ def search(x, y) :
 
 print("\nSoal 8")
 print(search(listNum, 45))
+
+
+# =====================Soal 9=====================
+
+
+
+def aritmatika(opr, x = 1, y =1) :
+    hasil = 0
+    try :
+        if opr == '+' :
+            hasil = x + y
+            return hasil
+        elif opr == '-' :
+            hasil = x - y
+            return hasil
+        elif opr == '*' :
+            hasil = x * y
+            return hasil
+        elif opr == '/' :
+            if y == 0 :
+                raise ZeroDivisionError("Tidak bisa dibagi dengan angka 0!")
+            else:
+                hasil = x / y
+                return hasil
+        else :
+            raise ValueError("Operator tidak dikenali, gunakan '+', '-', '*', '+'")
+    except ZeroDivisionError as error :
+        print(error)
+    except ValueError as error :
+        print(error)
+
+
+print("\nSoal 9")
+print(aritmatika('/', 7, 6))
+
+
+
+# =====================Soal 10=====================
+
+
+
+print("\nSoal 10")
+import volume
+
+
+
+print("- Kubus : ", volume.kubus(5))
+
+print("\n- Balok : ", volume.balok(3, 5, 7))
+
+print("\n- Limas Segi-4 : ", volume.limas4(11, 13, 19))
+
+print("\n- Prisma Segi-3 : ", volume.prisma3(2, 4, 6))
