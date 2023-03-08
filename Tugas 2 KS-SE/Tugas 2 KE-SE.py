@@ -78,6 +78,7 @@ def palindrome(x) :
 
 print("\nSoal 5")
 print(palindrome("kasur ini rusak"))
+print(palindrome("yahaha"))
 
 
 # =====================Soal 6=====================
